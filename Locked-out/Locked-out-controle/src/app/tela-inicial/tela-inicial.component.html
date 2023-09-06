@@ -1,0 +1,18 @@
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+        <img src="/Locked-out/Locked-out-controle/src/app/imagens/IMG-20230831-WA0003.png"/>    
+        <ul>
+            <li><a>Tela Inicial</a></li>
+            <li><a>Bloquear uma URL</a></li>
+            <li><a>Historico</a></li>
+            <li><a>Configurações</a></li>
+            <li><a>Sair</a></li>
+        </ul>
+    </mat-drawer>
+  
+    <div class="sidenav-content">
+      <button id="sidenav" class="button" type="button" mat-mini-fab (click)="drawer.toggle()">
+       <
+      </button>
+    </div>
+  </mat-drawer-container>
