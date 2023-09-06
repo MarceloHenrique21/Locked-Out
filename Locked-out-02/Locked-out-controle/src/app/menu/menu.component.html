@@ -1,0 +1,19 @@
+<div class="menu" [ngClass]="collapsed ? 'menu-collapsed': ''">
+    <div class="logo-container">
+        <button class="logo" (click)="toggleCollapse()">L</button>
+        <div class="logo-texto" *ngIf="collapsed">locked out</div>
+        <button class="botao-abreFecha" *ngIf="collapsed" (click)="closeMenu()">
+            <i class="fal fa-times close-icon"></i>    
+        </button>
+    </div>  
+
+    <ul class="lista-menu">
+        <li class="opcoes-menu" *ngFor="let data of navData">
+            <a class="link-botao" [routerLink]="[data.routerLink]">
+                <i class="icone-link" [class]="data.icon"></i>
+                <span class="link-texto" *ngIf="collapsed">{{data.label}}</span>
+
+             </a>
+        </li>
+    </ul>
+</div>
