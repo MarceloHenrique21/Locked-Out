@@ -1,0 +1,13 @@
+.demo-table {
+    width: 100%;
+  }
+  
+  .demo-button-container {
+    padding-bottom: 8px;
+    margin-top: 40px;
+  }
+  
+  .demo-button + .demo-button {
+    margin-left: 8px; 
+    color: rgba(73, 226, 106, 1);
+  }
